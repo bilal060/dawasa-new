@@ -13,7 +13,7 @@ const userSchema = new Schema({
         required: true,
         select: false
     },
-    status: { type: String, default: 'ACTIVE' },
+    status: { type: String, default: 'DEACTIVE' },
     phone: { type: String },
     token: { type: String },
     branch_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Branch', required: true },
